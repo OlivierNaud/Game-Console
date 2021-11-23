@@ -1,0 +1,238 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+section {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	flex-flow: wrap;
+}
+
+.blocConsol {
+	height: 50%;
+	width: 50%;
+}
+
+
+/*PLAYSTATION*/
+
+#playstation {
+	background-color: #00001e;
+	z-index: 100;
+}
+
+.logoPlaystation, .logoXbox, .logoSwitch, .logoOrdi {
+	position: relative;
+	width: 100%;
+	height: 70%;
+}
+
+.svgPlaystation {
+	width: 30%;
+	position: relative;
+	left: 50%;
+	top: 22%;
+	transform: translate(-50%);
+}
+
+
+/*PATH PLAYSTATION*/
+
+.pathRedPlaystation, .pathYellowPlaystion, .pathBleuGreenPlaystation, .pathBluePlaystation {
+	fill:none;
+	stroke-miterlimit:10;
+}
+
+.pathRedPlaystation {
+	stroke:#e52421;
+	filter: drop-shadow(0 0 10px #e52421);
+} 
+
+.pathYellowPlaystion {
+	stroke:#f3c213;
+	filter: drop-shadow(0 0 10px #f3c213);
+}
+
+.pathBleuGreenPlaystation {
+	stroke:#0fab9f;
+	filter: drop-shadow(0 0 10px #0fab9f);
+}
+
+.pathBluePlaystation {
+	stroke:#256db5;
+	filter: drop-shadow(0 0 10px #256db5);
+}
+
+
+/*NAME PLAYSTATION*/
+
+.namePlaystation, .nameXbox, .nameSwitch, .nameOrdi {
+    position: relative;
+    color: white;
+    margin: 0;
+    font-size: 32px;
+    text-align: center;
+}
+
+.marginName {
+	margin-left: 25px;
+}
+
+
+/*XBOX*/
+
+#xbox {
+	background-color: #0E7A0D;
+}
+
+.svgXbox {
+	width: 20%;
+	position: relative;
+	left: 40%;
+	top: 22%;
+	transform: translate(-50%);
+}
+
+.pathXbox {
+	fill:#fff;
+}
+
+
+/*NAME XBOX*/
+
+.nameXbox {
+    position: relative;
+    color: white;
+    margin: 0;
+    font-size: 32px;
+    text-align: center; 
+}
+
+
+/*SWITCH*/
+
+#switch {
+	background-color: #FE0016;
+}
+
+.svgManetteGaucheSwitch, .svgManetteDroiteSwitch {
+	position: relative;
+	left: 40%;
+	top: 30%;
+	transform: translate(-50%);
+}
+
+
+/*MANETTE GAUCHE */
+.svgManetteGaucheSwitch {
+	width: 9.9%;
+}
+
+.manetteGauche {
+	fill:none;
+	stroke-miterlimit:10;
+	stroke:white;
+	stroke-width:10px;
+}
+
+.joystickGauche {
+	fill:white;
+}
+
+
+/*MANETTE DROITE*/
+.svgManetteDroiteSwitch {
+	width: 8%;
+}
+
+.joystickDroite {
+	fill:#FE0016;
+}
+
+.manetteDroite {
+	fill:white;
+}
+
+
+/*ECRAN SWITCH*/
+
+.svgEcranSwitch {
+	width: 49%;
+    position: relative;
+    top: -55%;
+    left: 6%;
+}
+
+.ecranSwitch {
+	fill:white;
+}
+
+
+/*ORDI*/
+
+#ordi {
+	background-color: #999999;
+}
+
+.svgOrdi {
+	width: 40%;
+	position: relative;
+	left: 50%;
+	top: 22%;
+	transform: translate(-50%);
+}
+
+.central {
+	fill:none;
+	stroke:black;
+	stroke-miterlimit:10;
+	stroke-width:3px;
+}
+
+.contourOrdi {
+	fill:black;
+} 
+
+.ecranOrdi {
+	fill:white
+}
+
+
+/*ANIMATION SPAN*/
+
+.namePlaystation span, .nameXbox span, .nameSwitch span, .nameOrdi span {
+	position: relative;
+	display: inline-block;
+	animation: animate 2s ease-in-out infinite;
+	animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes animate {
+	0% {
+		transform: scale(1);
+	}
+
+	20% {
+		transform: scale(1.4);
+		filter: drop-shadow(0 0 10px white);
+	}
+
+	40%,100% {
+		transform: scale(1);	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
